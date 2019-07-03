@@ -1,0 +1,335 @@
+@import "smart-grid.less";
+
+.reset();
+
+.wrapper{
+    .wrapper();
+}
+.debug{
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+
+
+
+
+@font-face {
+    font-family: "Ubuntu R"; /* Имя шрифта */
+    src: url(../fonts/Ubuntu-Regular.ttf) format("truetype"), 
+         url(../fonts/Ubuntu-Regular.woff) format("woff"), 
+         url(../fonts/Ubuntu-Regular.eot) format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "Ubuntu M"; /* Имя шрифта */
+    src: url(../fonts/Ubuntu-Medium.ttf) format("truetype"), 
+         url(../fonts/Ubuntu-Medium.woff) format("woff"), 
+         url(../fonts/Ubuntu-Medium.eot) format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "Ubuntu B"; /* Имя шрифта */
+    src: url(../fonts/Ubuntu-Bold.ttf) format("truetype"), 
+         url(../fonts/Ubuntu-Bold.woff) format("woff"), 
+         url(../fonts/Ubuntu-Bold.eot) format("embedded-opentype");
+}
+
+body{
+    overflow-x: hidden !important;
+}
+.wrap{
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0 40px;
+   box-sizing: border-box;
+
+}
+.container-main{
+   max-width: 1000px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+
+}
+.discount{
+    margin-bottom: 28px;
+    background-color: #00adef;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+font-family: Ubuntu R;
+font-size: 15px;
+font-weight:400;
+line-height: 20px;
+    span{
+       font-family: Ubuntu b; 
+    }
+/* Text style for "Летние ски" */
+}
+.menu{
+ align-self: center;
+  margin-top: -7px;
+}
+.grid--system{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.phone{
+    div:first-child{
+        a{
+    text-decoration: none;
+font-family: "Ubuntu R";
+font-size: 20px;
+line-height: 36px;
+color: #1F1F1F;
+        }
+    }
+}
+.logo{
+    margin-left: 27px;
+}
+.connect{
+    text-align: right;
+    position: relative;
+    font-family: "Ubuntu R";
+font-size: 13px;
+line-height: 16px;
+/* identical to box height, or 123% */
+color: #1F1F1F;
+    &::before{
+        border-radius: 50%;
+        position: absolute;
+        content: "";
+ margin-left: -12px;
+ margin-top: 7px;
+        width: 6px;
+height: 6px;
+background-color: #16e213;
+    }
+}
+.call button{
+    margin-left: 64px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+font-family: "Ubuntu Medium";
+font-size: 13px;
+font-weight: 500;
+line-height: 20px;
+text-transform: uppercase;
+width: 172px;
+height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 4px;
+background-color: #ed2d23;
+}
+.main--screen{
+    margin-top: 20px;
+    box-sizing: border-box;
+width: 100%;
+    background: url(../img/grad.png);
+    height: 612px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: #ffffff;
+font-family: "Ubuntu M";
+font-size: 54px;
+line-height: 64px;
+    }
+    p{
+        margin: 18px 0 38px; 
+        color: #ffffff;
+font-family: Ubuntu;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+    }
+}
+.film--watch{
+    padding: 0 0 0 12px;
+    display: flex;
+    align-items: center;
+    width: 320px;
+height: 72px;
+border-radius: 4px;
+background-color: rgba(0, 36, 50,0.6);
+}
+.film--about{
+    margin-left: 16px;
+    div:first-child{
+        color: #ffffff;
+font-family: Ubuntu b;
+font-size: 17px;
+line-height: 24px
+    }
+    div:last-child{
+color: #ffffff;
+font-family: Ubuntu R;
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+    }
+}
+.skew--block:nth-child(1){
+    &::before{
+        position: absolute;
+        content: url(../img/hit.png);
+             transform: skew(25deg,0deg);
+         top: -15px;
+        left: 10px;
+    }
+}
+   .skew--block{
+       position: relative;
+        width: 288px;
+height: 40px;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+background-color: #ffffff;
+       transform: skew(-25deg,0deg);
+    }
+.skew--block:nth-child(2){
+           margin: 12px 0;
+}
+.container{
+     transform: skew(25deg,0deg);
+    color: #1f1f1f;
+font-family: Ubuntu R;
+font-size: 17px;
+font-weight: 400;
+line-height: 20px;
+/* Text style for "4,57" */
+color: #1f1f1f;
+    span{
+        color: #ed2d23;
+    }
+}    
+.move{
+    margin-left: 70px;
+}
+.content--screen{
+    display: flex;
+}
+.content--1{
+    margin-top: 135px;
+}
+.content--2{
+    margin-top: 105px;
+    margin-left: 140px;
+}
+.navigation{
+padding: 17px 0 16px;
+    width: 100%;
+    border-bottom: 1px solid #d3dfeb;
+}
+.navigation--flex{
+    display: flex;
+    align-items: center;
+    
+    li{
+        margin-left: 24px;
+        a{
+            text-decoration:none;
+            color: #3d3d3d;
+            font-family: Ubuntu R;
+            font-size: 13px; 
+            font-weight: 400;
+        }
+    }
+    li:first-child{
+        margin-left: 0px;
+    }
+}
+.active{
+opacity: 0.6;
+color: #3d3d3d;
+font-family: Ubuntu;
+font-size: 13px;
+font-weight: 400;
+    position: relative;
+    &::after{
+       display: inline-block;
+       content: url(../img/Group.png);
+        vertical-align: middle;
+       margin-left: 24px;
+    }
+}
+.content--left{
+    h2{
+        margin-bottom: 28px;
+max-width: 360px;
+color: #4b4b4b;
+font-family: Ubuntu M;
+font-size: 15px;
+line-height: 24px;
+    }
+}
+.content--queue{
+    margin-bottom: 8px;
+color: #999999;
+font-family: Ubuntu R;
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+}
+.flex--corpus{
+display: flex;
+color: #3d3d3d;
+font-family: Ubuntu M;
+font-size: 15px;
+line-height: 20px;
+    div:nth-child(2){
+        margin-left: 48px;
+    }
+}
+.black--river--about{
+    margin-top: 48px;
+}
+.map{
+    margin-top: 34px;
+position: relative;
+color: #00adef;
+font-family: Ubuntu R;
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+text-decoration: none;
+    margin-left: 8px;
+    display: block;
+    &::before{
+        position: relative;
+        top: 4px;
+        left: -8px;
+        content: url(../img/Shape.svg);
+        float: left;
+    }
+}
+.flex--img{
+    display: flex;
+}
+.wrap--content{
+    display: flex;
+    justify-content: space-between;
+}
+.img--block{
+    margin-left: 20px;
+    margin-top: 40px;
+    img:first-child{
+        margin-bottom: 20px;
+    }
+}
