@@ -82,7 +82,7 @@ line-height: 20px;
     display: flex;
 }
 .phone{
-    div:first-child{
+    span:first-child{
         a{
     text-decoration: none;
 font-family: "Ubuntu R";
@@ -90,6 +90,8 @@ font-size: 20px;
 line-height: 36px;
 color: #1F1F1F;
         }
+        display: block;
+        margin-top: -2px;
     }
 }
 .logo{
@@ -101,6 +103,7 @@ color: #1F1F1F;
     font-family: "Ubuntu R";
 font-size: 13px;
 line-height: 16px;
+    margin-top: -5px;
 /* identical to box height, or 123% */
 color: #1F1F1F;
     &::before{
@@ -272,7 +275,7 @@ font-weight: 400;
 .content--left{
     h2{
         margin-bottom: 28px;
-max-width: 360px;
+max-width: 370px;
 color: #4b4b4b;
 font-family: Ubuntu M;
 font-size: 15px;
@@ -332,4 +335,164 @@ text-decoration: none;
     img:first-child{
         margin-bottom: 20px;
     }
+}
+.marker{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: url(../img/marker.png);
+        top: -28px;
+        right: 20px;
+    }
+}
+
+.items-architecture{
+display: flex;
+flex-wrap: wrap;
+}
+.about-architecture{
+    h2{
+      color: #3d3d3d;
+    font-family: "Ubuntu M";
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px; 
+        margin-bottom: 40px;
+    }
+    h3{
+        color: #3d3d3d;
+    font-family: Ubuntu R;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    }
+}
+.text-architecture{
+    color: #3d3d3d;
+font-family: Ubuntu R;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+    max-width: 575px;
+    margin-bottom: 35px;
+}
+.info-architecture{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p{
+       color: #999999;
+font-family: Ubuntu r;
+font-size: 13px;
+font-weight: 400;
+line-height: 20px; 
+    }
+}
+.architecture{
+    padding-top: 75px;
+}
+
+
+.plan-queue-b {
+width: 280px;
+min-height: 64px;
+border-radius: 4px;
+border: 1px solid #d3dfeb;
+background-color: #ffffff;
+padding: 24px 24px;
+box-sizing: border-box;
+ color: #00adef;
+font-family: "Ubuntu M";
+font-size: 13px;
+line-height: 16px;
+text-transform: uppercase;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: url(../img/plan-queue.svg);
+        right: 0;
+        top: 0;
+    }
+    margin-right: 20px;
+}
+.d-model {
+width: 280px;
+min-height: 64px;
+border-radius: 4px;
+border: 1px solid #d3dfeb;
+background-color: #ffffff;
+padding: 24px 24px;
+box-sizing: border-box;
+color: #ed2d23;
+font-family: "Ubuntu M";
+font-size: 13px;
+line-height: 16px;
+text-transform: uppercase;
+position: relative;
+      &::after{
+        position: absolute;
+        content: url(../img/3d.svg);
+        right: 0;
+        top: 0;
+    }
+    
+}
+.model-plan{
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.kitchen {
+  position: relative;
+       grid-column: span 5;
+
+}
+.bathroom {
+   position: relative;
+        grid-column:  span 4;
+
+}
+.clear-zone {
+   position: relative;
+        grid-column:  span 3;
+
+}
+.place-safe {
+   position: relative;
+    grid-column:  span 3;
+}
+.bathroom-2 {
+  position: relative; 
+    grid-column:  span 4;
+}
+.terrace {
+   position: relative;
+    grid-column:  span 5;
+}
+.grid-items-abr{
+    grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+    display: grid;
+    max-width: 1000px;
+}
+.img-abr{
+    
+}
+.content-abr{
+    h2{
+        color: #ffffff;
+        font-family: "Ubuntu M";
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+         position: absolute;
+        bottom: 21px;
+        left: 24px;
+    }
+   
+}
+
+.advantages-black-river{
+    margin-top: 75px;
 }
