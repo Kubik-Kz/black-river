@@ -50,6 +50,7 @@
 
 .slick-track
 {
+    
     position: relative;
     top: 0;
     left: 0;
@@ -76,7 +77,6 @@
 
 .slick-slide
 {
-    display: none;
     float: left;
 
     height: 100%;
@@ -86,10 +86,7 @@
 {
     float: right;
 }
-.slick-slide img
-{
-    display: block;
-}
+
 .slick-slide.slick-loading img
 {
     display: none;
@@ -100,7 +97,6 @@
 }
 .slick-initialized .slick-slide
 {
-    display: block;
 }
 .slick-loading .slick-slide
 {
