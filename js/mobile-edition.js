@@ -1,4 +1,9 @@
-var mql;
+
+
+
+$(document).ready(function () {
+
+  var mql;
 if ((mql = window.matchMedia("(max-width: 768px)")).matches && $("#wrap--mobile").ready(function() {
         var e = $(".first--queue"),
             t = $(".content--right");
@@ -18,4 +23,6 @@ if ((mql = window.matchMedia("(max-width: 768px)")).matches && $("#wrap--mobile"
     (mql = window.matchMedia("(max-width: 768px)")).matches) {
     var div = document.getElementById("corpuse");
     div.innerHTML += "Жилых корпусов"
-}
+}  
+
+});

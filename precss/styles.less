@@ -177,6 +177,7 @@ width: 100%;
     opacity: 0.56;
     z-index: 4;
     position: fixed;
+    cursor: pointer;
 }
 
 
@@ -450,11 +451,11 @@ line-height: 20px;
   
 }
 .content--1{
-    margin-top: 135px;
+    margin-top: 245px;
 }
 .content--2{
     position: relative;
-    margin-top: 135px;
+    margin-top: 210px;
     margin-left: 110px;
 }
 .navigation{
@@ -564,7 +565,7 @@ line-height: 20px;
     margin-bottom: 5px;
 display: flex;
 color: #3d3d3d;
-font-family: "Ubuntu M", sans-serif;
+font-family: "Ubuntu R", sans-serif;
 font-size: 15px;
 line-height: 20px;
     div:nth-child(2){
@@ -661,15 +662,15 @@ line-height: 20px;
 
 
 .plan-queue-b {
-    cursor: pointer;
 width: 280px;
 min-height: 64px;
+    overflow: hidden;
 border-radius: 4px;
 border: 1px solid #d3dfeb;
 background-color: #ffffff;
 padding: 24px 24px;
 box-sizing: border-box;
- color: #00adef;
+color: #00adef;
 font-family: "Ubuntu M", sans-serif;
 font-size: 13px;
 line-height: 16px;
@@ -677,6 +678,7 @@ text-transform: uppercase;
     position: relative;
     transition: 0.3s ease-out;
     &:hover{
+        cursor: pointer;
         transition: 0.3s ease-out;
         transform: scale(1.05);
         box-shadow: 0 1px 5px 0 rgba(0,14,63,.25);
@@ -690,7 +692,7 @@ text-transform: uppercase;
     margin-right: 20px;
 }
 .d-model {
-    
+    overflow: hidden;
     cursor: pointer;
 width: 280px;
 min-height: 64px;
@@ -880,6 +882,7 @@ color: #fff;
 .download--presentation01{
     overflow: hidden;
 margin: 120px auto 0;
+    cursor: pointer;
     box-sizing: border-box;
     padding-left: 24px;
 position: relative;
@@ -891,6 +894,14 @@ height: 64px;
 border-radius: 4px;
 border: 1px solid #d3dfeb;
 background-color: #ffffff;
+            transition: 0.3s ease-out;
+
+      &:hover{
+        cursor: pointer;
+        transition: 0.3s ease-out;
+        transform: scale(1.05);
+        box-shadow: 0 1px 5px 0 rgba(0,14,63,.25);
+    }
     a{
         text-decoration: none;
         color: #00adef;
@@ -901,6 +912,7 @@ line-height: 16px;
 text-transform: uppercase;
     }
     &::after{
+        transition: 0.3s ease-out;
         position: absolute;
         content: "";
         top: -1px;
@@ -910,15 +922,19 @@ height: 64px;
 background-color: #00adef;   
         transform: skew(-25deg,0deg);    
     }
-  
 }
 
 .img--magazine{
-        position: absolute;
+    position: absolute;
         top: -80px;
         right: 25%;
         z-index: 2;
+    cursor: pointer;
+             transition: 0.3s ease-out;
+
+     
 }
+
 .content--presentation{
     margin-top: 45px;
     p{
@@ -1032,6 +1048,9 @@ border: 1px solid #ffffff;
         
         background-color: rgba(255, 255, 255, 0.24);  
     }
+     img{
+          border-radius: 4px;
+    }
 }
 
 .block--more--2{
@@ -1054,6 +1073,9 @@ border: 1px solid #ffffff;
     &:hover button{
         
         background-color: rgba(255, 255, 255, 0.24);  
+    }
+    img{
+          border-radius: 4px;
     }
 }
 
@@ -1746,6 +1768,7 @@ background-color: #d2deec;
     transition: .5s;
 }
 .discounts3 {
+    overflow: hidden;
       transition: .3s;
         &:hover:after{
         transition: .3s;
@@ -1945,10 +1968,18 @@ line-height: 24px;
 /* Text style for "шоу-рум, э" */
         span{
             cursor: pointer;
-            color: #00adef;
             a{
                color: #00adef;  
+            transition: .3s;
+
+                 &:hover{
+                     transition: .3s;
+             color: #009ED8;
             }
+            }
+        }
+        a:active{
+            color: #008ABD;
         }
         margin-left: 21px;
         align-self: center;
@@ -2010,8 +2041,8 @@ font-weight: 500;
 line-height: 20px;
 text-transform: uppercase;
             &:hover svg{
-                animation: arrowAnimation cubic-bezier(0.0, 0.6, 1.0, 0.4);  
-                animation-duration: .5s; 
+                animation: arrowAnimation;  
+                animation-duration: .7s; 
             }
         
         }
@@ -2031,14 +2062,18 @@ text-transform: uppercase;
     position: relative;
     border-radius: 4px;
     z-index: 1;
+    overflow: hidden;
     box-sizing: border-box;
-border-radius: 4px;
-border: 1px solid #d2deec;
+    border-top-left-radius:  4px;
+    border-top-right-radius:  4px;
+
     cursor: pointer;
+            transition:all 0.3s;
     &:hover{
-             box-shadow: 0 1px 5px 0 rgba(0,14,63,.25);
+box-shadow: 0px 0px 39px -4px rgba(0,0,0,0.28);
         transition:all 0.3s;
           cursor: pointer; 
+        
     }
     h4{
            padding: 20px 20px 0 20px;
@@ -2060,6 +2095,13 @@ line-height: 20px;
 
   
 }
+.information-house-l{
+    border: 1px solid #d2deec;
+    border-top: none;
+    border-radius: 4px;
+    margin-top: -6px;
+
+}
 .content--house:hover svg{
     animation: arrowAnimation cubic-bezier(0.0, 0.6, 1.0, 0.4);  
     animation-duration: .5s;  
@@ -2067,13 +2109,18 @@ line-height: 20px;
 .apartment--img{
        max-height: 160px;
          overflow: hidden; 
+        z-index: 2;
+        position: relative;
+    
 }
 .apartment--img img{
-    transition: .3s;
+    transition: .8s;
+      border-radius: 4px;
 }
 .content--house:hover img{
     cursor: pointer;
     transform: scale(1.1);
+  
 }
 .flex--room{
    padding:  0 20px 70px 20px;
@@ -2338,7 +2385,7 @@ line-height: 20px;
     justify-content: center;
     align-items: center;
     top: -43px;
-    left: 0;
+    left: -1px;
     background-color: #00adef;
   padding: 0 5px 0 20px;
     min-height: 28px;
@@ -2802,8 +2849,13 @@ color: #999999;
             border-top: 1px solid #D3DFEB;
             border-bottom: 1px solid #D3DFEB;
             box-sizing: border-box;
+            transition: 0.3s;
             svg{
                 margin-left: 5px;
+            }
+            &:hover{
+            transition: 0.3s;
+            box-shadow: 0px 6px 18px rgba(0, 36, 50, 0.32);
             }
         }
         td:first-child{
@@ -2816,6 +2868,9 @@ color: #999999;
         }
     }
     tr{
+        td{
+            cursor: pointer;
+        }
        td:nth-child(5){
             text-align: right;
         }td:nth-child(6){
@@ -2826,7 +2881,52 @@ color: #999999;
         }
     }
     
-    
+    tr:nth-child(2){
+        td:nth-child(2){
+            text-align: center
+        } td:nth-child(4){
+            text-align: center
+        } td:nth-child(3){
+            text-align: center;
+        } td:nth-child(5){
+            text-align: center;
+        }
+    }
+    tr:nth-child(3){
+        td:nth-child(2){
+            text-align: center
+        } td:nth-child(4){
+            text-align: center
+        } td:nth-child(3){
+            text-align: center;
+        } td:nth-child(5){
+            text-align: center;
+        }
+    }
+    tr:nth-child(4){
+        td:nth-child(2){
+            text-align: center
+        } td:nth-child(4){
+            text-align: center
+        } td:nth-child(3){
+            text-align: center;
+        } td:nth-child(5){
+            text-align: center;
+        }
+    }
+    tr{
+        td:nth-child(2){
+            text-align: center
+        } td:nth-child(4){
+            text-align: center
+        } td:nth-child(3){
+            text-align: center;
+        } td:nth-child(5){
+            text-align: center;
+        } td:nth-child(6){
+            text-align: center;
+        }
+    }
     
 }
 
@@ -2835,12 +2935,16 @@ color: #999999;
     border-bottom: 1px solid #D3DFEB;
     td{
     height: 61px;
+        transition: 0.3s;
+        &:hover{
+            box-shadow: 0px 6px 18px rgba(0, 36, 50, 0.32);
+        }
     }
     td:first-child{
             padding-left: 44px;
             border-left: 1px solid #D3DFEB;
         }td:last-child{
-            padding-left: 44px;
+            
             border-right: 1px solid #D3DFEB;
         }
     
@@ -3796,6 +3900,66 @@ color: #999999;
     }
 }
 
+
+
+
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+
+.tabs__content1 {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content1.active1 {
+  display: block; /* по умолчанию показываем нужный блок */
+    position: relative;
+   
+}
+
+.tabs__caption1 li.active1 {
+      /* по умолчанию показываем нужный блок */
+    position: relative;
+    a{
+        opacity: 0.6;
+    }
+        &::before{
+        position: absolute;
+        display: block;
+        content: "";
+        top: auto;
+        right: 0;
+        bottom: -1px;
+        left: 0;
+        height: 4px;
+        background: #00adef;
+            }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and(max-width:1024px){
    .content--2{
         margin-left: 40px;
@@ -4157,17 +4321,67 @@ margin-left: 0;
         left: 28px;
     }
 }
+
+   
 @media screen and(max-width:480px){
     .text-architecture{
         margin-bottom: 0px;
+    } 
+    .shouroom{
+    width: 153px!important;
+}
+    .input-price input {
+        width: 100%;
     }
-     .img-pdf{
-        
+    .left-side{
+    width: 100%;
+    }
+    .grid-calc{
+        display: block;
+    }
+    .input-credit{
+        margin-top: 16px;
+        input{
+            width: 100%;
+        }
+    }
+    .img-abr img{
+        width: 320px;
+    }
+      .img-pdf{
+        left: -10px;
         width: 40%;
          
     }
-    
-    
+      .content--right{
+        min-width: 500px;
+    overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+-webkit-overflow-scrolling: touch;
+             &::-webkit-scrollbar {
+    display: none;
+  }
+    }
+    .flex--img{
+        display: -webkit-box;
+        img{
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+        }
+    }
+    .img--block{
+        margin-top: 0px;
+        display: flex;
+    }
+    .block--img--03{
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .download-pdf{
+        padding-top: 0px;
+    }
      .popup_promo-list{
         max-width: 320px;
         padding: 45px 35px 40px;
@@ -4342,6 +4556,11 @@ object-fit: cover;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        border-radius: 4px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+        box-sizing: border-box;
     }
     .info-layout{
         padding: 27px 16px 0px;
@@ -4431,6 +4650,7 @@ object-fit: cover;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 588px;
+        border-radius: 4px;
         p{
             max-width: 250px;
         }
@@ -4666,26 +4886,51 @@ box-sizing: border-box;
             bottom: 16px;
         }
     }
+        .skew--block{
+        width: 260px;
+    }
+    .move{
+        width: 385px;
+    }
+    .content--2{
+        margin-left: -20px;
+    }
+      .skew--block:nth-child(3){
+        margin-left: 15px;
+        width: 320px;
+    }
+    .content--1{
+        margin-left: 50px;
+        max-width: 290px;
+    }
+
 }
 @media screen and(max-width:420px){
-     .content--2{
-        position: absolute;
-        left: -30px;
-    }
     .img-flat-pop{
       max-width: 320px!important;
     }
+  
     .pop-flat{
        width: 320px; 
     }
     .popup_buy{
         width: 320px;
     }
-      .skew--block{
+        .skew--block{
         width: 260px;
     }
     .move{
+        width: 380px;
+    }
+    .content--2{
+        margin-left: -20px;
+    }
+      .skew--block:nth-child(3){
+        margin-left: 15px;
         width: 320px;
+    }
+    .content--1{
+        margin-left: 50px;
     }
     .block--find--apartment button{
         width: 83%;
@@ -4720,11 +4965,29 @@ box-sizing: border-box;
             }
         }
     }
-     
+         .skew--block{
+        width: 260px;
+    }
+    .move{
+        width: 100%;
+    }
+    .content--2{
+        margin-left: -70px;
+    }
+      .skew--block:nth-child(3){
+        margin-left: 15px;
+        width: 320px;
+    }
+    .content--1{
+        margin-left:20px;
+    }
 }
 @media screen and(max-width:320px){
-    .content--1{
-        padding: 0 16px;
+       .content--1{
+       padding: 0 16px;
+    }
+    .content--2{
+        margin-left: -35px;
     }
 .discounts1
         .logo{
