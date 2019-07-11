@@ -1725,9 +1725,8 @@ background-color: #d2deec;
         &::after{
         transition: .3s;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 40%;
+        left: 0;
         content: url(../img/lenta.png);
     }
   
@@ -1766,6 +1765,12 @@ background-color: #d2deec;
          outline: none;
     }
     transition: .5s;
+}
+.discounts2{
+   &:hover:after{
+        transition: .3s;
+        transform: scale(1.03);
+    }
 }
 .discounts3 {
     overflow: hidden;
@@ -2854,6 +2859,7 @@ color: #999999;
                 margin-left: 5px;
             }
             &:hover{
+            border-radius: 4px;
             transition: 0.3s;
             box-shadow: 0px 6px 18px rgba(0, 36, 50, 0.32);
             }
@@ -2937,6 +2943,7 @@ color: #999999;
     height: 61px;
         transition: 0.3s;
         &:hover{
+            border-radius: 4px;
             box-shadow: 0px 6px 18px rgba(0, 36, 50, 0.32);
         }
     }
@@ -3007,7 +3014,15 @@ line-height: 20px;
     margin-bottom: 50px;
 }
 
+.filter_list {
+    transition: 0.1s ease-out;
+   
+}
 
+.rotate-filter{
+    transition: 0.1s ease-out;
+     transform: rotate(180deg);
+}
 
 
 
@@ -3935,7 +3950,30 @@ color: #999999;
         left: 0;
         height: 4px;
         background: #00adef;
-            }
+    
+    }
+        
+}
+.tabs__caption li.active {
+      /* по умолчанию показываем нужный блок */
+    position: relative;
+    
+        &::before{
+            position: absolute;
+    content: "";
+    z-index: -1;
+    background: #f4f5f9;
+    width: 25px;
+    height: 25px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    text-align: center;
+    
+        }
         
 }
 
@@ -4855,7 +4893,7 @@ box-sizing: border-box;
         }
         &:after{
             position: absolute;
-            top: 75%;
+            top: 60%;
             content: url(../img/img-bantik-mob.svg);
             
         }

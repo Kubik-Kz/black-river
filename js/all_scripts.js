@@ -112,7 +112,30 @@ $(document).ready(function() {
 });  
 
   
+        
    
+        
+        
+    $(".filter_list3").click(function(){
+        $(".filter_list3 > svg").toggleClass("rotate-filter");
+         
+    });
+        
+        
+    $(".filter_list2").click(function(){
+        $(".filter_list2 > svg").toggleClass("rotate-filter");
+         
+    });
+        
+        
+    $(".filter_list1").click(function(){
+        $(".filter_list1 > svg").toggleClass("rotate-filter");
+         
+    }); 
+    $(".filter_list").click(function(){
+        $(".filter_list > svg").toggleClass("rotate-filter");
+         
+    });
         
     $(".img--magazine").mouseover(function(){
         $(".download--presentation01").css({"transition": "0.3s ease-out", "box-shadow": "0 1px 5px 0 rgba(0,14,63,.25)", "transform": "scale(1.05)"});
