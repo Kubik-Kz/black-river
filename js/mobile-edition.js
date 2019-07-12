@@ -1,7 +1,7 @@
 
 
 
-$(document).ready(function () {
+
 
   var mql;
 if ((mql = window.matchMedia("(max-width: 768px)")).matches && $("#wrap--mobile").ready(function() {
@@ -25,4 +25,3 @@ if ((mql = window.matchMedia("(max-width: 768px)")).matches && $("#wrap--mobile"
     div.innerHTML += "Жилых корпусов"
 }  
 
-});

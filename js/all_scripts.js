@@ -1,12 +1,12 @@
 
 $(document).ready(function () {
 
-   $("button#call_back-pop").click(function() {
+   $("button.call_back-pop").click(function() {
     $(".popup_callback").addClass("show-block"); 
     $(".overlay-m").addClass("show-block");
 });
 
-$("span#call_back-pop").click(function() {
+$("span.call_back-pop").click(function() {
     $(".popup_callback").addClass("show-block"); 
     $(".overlay-m").addClass("show-block");
 });
